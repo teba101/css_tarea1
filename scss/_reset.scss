@@ -1,0 +1,31 @@
+/* --- Reset Universal --- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Eliminar estilos por defecto en listas */
+ul, ol {
+  list-style: none;
+}
+
+/* Enlaces limpios */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Imágenes responsivas por defecto */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Fuentes base para los inputs y botones */
+button, input, textarea, select {
+  font: inherit;
+}

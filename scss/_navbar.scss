@@ -1,0 +1,79 @@
+@use 'variables' as *;
+
+body {
+  background-color: $color-white;
+  color: $color-text-main;
+  font-family: $font-body;
+}
+
+.header {
+  background-color: $color-bg;
+  padding-bottom: 110px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 28px 0;
+
+  &__logo {
+    font-weight: 700;
+    font-size: 1.6rem;
+    color: $color-text-main;
+    text-decoration: none;
+    letter-spacing: -0.03em;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: $color-primary;
+    }
+  }
+
+  &__menu {
+    display: flex;
+    list-style: none;
+    gap: 36px;
+
+    a {
+      text-decoration: none;
+      color: $color-text-muted;
+      font-weight: 500;
+      transition: color 0.3s ease;
+
+      &:hover,
+      &.active {
+        color: $color-primary;
+      }
+    }
+  }
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 28px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+
+  &--primary {
+    background-color: $color-primary;
+    color: $color-white;
+    box-shadow: 0 10px 24px rgba(20, 184, 190, 0.28);
+
+    &:hover {
+      background-color: #0ea3a8;
+      transform: translateY(-3px);
+      box-shadow: 0 16px 30px rgba(20, 184, 190, 0.36);
+    }
+  }
+}
